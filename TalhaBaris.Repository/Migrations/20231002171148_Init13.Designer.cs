@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TalhaBaris.Repository;
 
@@ -11,9 +12,10 @@ using TalhaBaris.Repository;
 namespace TalhaBaris.Repository.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231002171148_Init13")]
+    partial class Init13
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -82,37 +84,23 @@ namespace TalhaBaris.Repository.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "Tony",
-                            Specialization = "Psikoloji",
-                            Surname = "Soprano"
+                            Name = "Talha",
+                            Specialization = "KBB",
+                            Surname = "Baris"
                         },
                         new
                         {
                             Id = 2,
-                            Name = "Tyrion",
-                            Specialization = "Beyin ve Sinir Cerrahisi",
-                            Surname = "Lannister"
+                            Name = "cemal",
+                            Specialization = "noroloji",
+                            Surname = "Baris"
                         },
                         new
                         {
                             Id = 3,
-                            Name = "John",
-                            Specialization = "Kulak Burun Boğaz",
-                            Surname = "Locke"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Name = "Walter",
-                            Specialization = "Nöroloji",
-                            Surname = "White"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Name = "Dexter",
-                            Specialization = "Genel Cerrahi",
-                            Surname = "Morgan"
+                            Name = "mehmet",
+                            Specialization = "göz",
+                            Surname = "Baris"
                         });
                 });
 
