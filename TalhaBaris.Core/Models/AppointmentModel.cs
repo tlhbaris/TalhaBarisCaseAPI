@@ -12,7 +12,7 @@ namespace TalhaBaris.Core.Models
         public int DoctorId { get; set; }
         public int PatientId { get; set; }
         public DateTime AppointmentDate { get; set; }
-        public bool Status { get; set; }
+        public bool Status { get; set; } = true;
         public DoctorModel Doctor { get; set; }
         public PatientModel Patient { get; set; }
 
